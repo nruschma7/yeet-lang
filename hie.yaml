@@ -1,0 +1,8 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "yeet-lang:lib"
+    - path: "./app"
+      component: "yeet-lang:exe:yeet-lang-exe"
+    - path: "./test"
+      component: "yeet-lang:test:yeet-lang-test"
