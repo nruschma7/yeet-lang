@@ -25,7 +25,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Lexer
   other-modules:
       Paths_yeet_lang
   autogen-modules:
@@ -53,15 +53,19 @@ executable yeet-lang-exe
 
 test-suite yeet-lang-test
   type: exitcode-stdio-1.0
-  main-is: Spec.hs
+  main-is: Tests.hs
   other-modules:
+      Tests.Assign
       Paths_yeet_lang
   autogen-modules:
       Paths_yeet_lang
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-tool-depends:
+      HTF:HTF
   build-depends:
-      base >=4.7 && <5
+      HTF
+    , base >=4.7 && <5
     , yeet-lang
   default-language: Haskell2010
