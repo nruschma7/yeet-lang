@@ -60,4 +60,4 @@ tests:
     - yeet-lang
     - HTF
     build-tools:
-    - HTF
+    - HTF:htfpp
