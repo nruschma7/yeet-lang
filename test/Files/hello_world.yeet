@@ -1,0 +1,4 @@
+spawn :: void
+spawn = 
+  cook x = 4
+  yap(x)
