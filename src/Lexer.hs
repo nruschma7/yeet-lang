@@ -1,13 +1,8 @@
 module Lexer (tokenize) where
 
 import Data.Char (isAlpha, isAlphaNum, isDigit, isSpace)
+import Token
 
-data Token = TokCook
-  | TokIdent String 
-  | TokInt Int
-  | TokAssign
-  | TokSemicolon
-  deriving (Show, Eq)
 
 tokenize :: String -> Either String [Token]
 tokenize [] = Right []
