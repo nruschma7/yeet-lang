@@ -61,3 +61,6 @@ tests:
     - HTF
     build-tools:
     - HTF:htfpp
+
+data-files:
+- data/hello_world.yeet
