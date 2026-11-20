@@ -10,7 +10,7 @@
 ## Test coverage
 
 - [ ] Add lexer tests for malformed strings, invalid characters, line endings, and integer boundary cases.
-- [ ✔️] Avoid relying on the test process being launched from the repository root when locating fixture files.
+- [x] Avoid relying on the test process being launched from the repository root when locating fixture files.
 
 ## Language and runtime
 
